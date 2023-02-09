@@ -13,7 +13,7 @@ app.use("/public",express.static(publicPathDirectory));
 
 // combind with router
 app.use("/api/v1",rootRouter);
-const port =8000||process.env.NODE_ENV;
+const port =process.env.NODE_ENV||8000;
 app.listen(8000, async () => {
   console.log(`App listening on http://localhost:${port}`);
   try {
