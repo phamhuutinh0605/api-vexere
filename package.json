@@ -4,11 +4,7 @@
   "main": "index.js",
   
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=6.9"
+    "start": "nodemon server.js"
   },
   "license": "MIT",
   "dependencies": {
