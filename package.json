@@ -2,12 +2,13 @@
   "name": "vexere_yarn",
   "version": "1.0.0",
   "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=6.9"
   },
   "license": "MIT",
   "dependencies": {
