@@ -14,7 +14,7 @@ app.use("/public",express.static(publicPathDirectory));
 // combind with router
 app.use("/api/v1",rootRouter);
 
-app.listen(3000, async () => {
+app.listen(process.env.NODE_ENV||3000, async () => {
   console.log("App listening on http://localhost:3000");
   try {
     await sequelize.authenticate();
